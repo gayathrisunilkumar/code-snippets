@@ -1,0 +1,49 @@
+<!-- An html code for to-do list where one can add things to it and remove by double click when done. -->
+<html>
+<head>
+<title></title>
+</head>
+<body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">	
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<div class="container">
+	<h2>Simple To Do List</h2>
+	<p><em>Click and drag to reorder, double click to cross an item off.</em></p>
+	<form name="toDoList">
+		<input type="text" name="ListItem"/>	
+	</form>
+	<div class="btn btn-primary" id="button">Add</div>
+	<br/>
+	<ol></ol>
+</div>
+</body>
+
+<script>
+	$(document).ready(
+	function(){
+	    $('#button').click(function(){
+	            var toAdd = $('input[name=ListItem]').val();
+	             $('ol').append('<li>' + toAdd + '</li>');
+	    });
+	    $("input[name=ListItem]").keyup(function(event){
+	      if(event.keyCode == 13){
+	        $("#button").click();
+	      }         
+	    });
+	    $(document).on('dblclick','li', function(){
+	    	$(this).toggleClass('strike').fadeOut('slow');    
+	    });
+	    $('input').focus(function() {
+		    $(this).val('');
+		});
+	    $('ol').sortable();   
+	});
+</script>
+</html>
