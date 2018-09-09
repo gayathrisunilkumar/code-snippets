@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<body background="http://www.wallpaperbetter.com/wallpaper/999/705/89/grand-canyon-national-park-usa-rocks-sunrise-red-sky-1080P-wallpaper.jpg">
+  
+<style type="text/css">
+  .column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+    opacity: 0.8; 
+    cursor: pointer; 
+    width: 250px;
+    height: 180px;
+}
+
+/*.column img:hover {
+    opacity: 1;
+}*/
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+    position: relative;
+    display: none;
+}
+.heading{
+text-align: center;
+color: white;
+}
+
+</style>
+</head>
+
+<h2 class="heading">IEEE SCT SB Gallery</h2>
+<div class="row" style="margin: 20px">
+  <div class="column">
+    <img src="h1.jpg" alt="Nature" onclick="openImg(this);">
+  </div>
+  <div class="column">
+    <img src="h2.jpg" alt="Nature" onclick="openImg(this);">
+  </div>
+  <div class="column">
+    <img src="h3.jpg" alt="Fjords" onclick="openImg(this);">
+  </div>
+  <div class="column">
+    <img src="h4.jpg" alt="Mountains" onclick="openImg(this);">
+  </div>
+  <div class="column">
+    <img src="h9.jpg" alt="Lights" onclick="openImg(this);">
+  </div>
+   <div class="column">
+    <img src="h11.jpg" alt="Lights" onclick="openImg(this);">
+  </div>
+   <div class="column">
+    <img src="h20.jpg" alt="Lights" onclick="openImg(this);">
+  </div>
+   <div class="column">
+    <img src="h15.jpg" alt="Lights" onclick="openImg(this);">
+  </div>
+   <div class="column">
+    <img src="h14.jpg" alt="Lights" onclick="openImg(this);">
+  </div>
+   <div class="column">
+    <img src="h13.jpg" alt="Lights" onclick="openImg(this);">
+  </div>
+   <div class="column">
+    <img src="h12.jpg" alt="Lights" onclick="openImg(this);">
+  </div>
+   <div class="column">
+    <img src="h10.jpg" alt="Lights" onclick="openImg(this);">
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+</body>
+</html>
