@@ -1,0 +1,45 @@
+<html>
+<head>
+	
+</head>
+<body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+		
+	</script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+function createTable(){
+	 
+	mytable = $('<table></table>').attr({ id: "basicTable" });
+	var rows = new Number($("#rowcount").val());
+	var cols = new Number($("#columncount").val());
+	var tr = [];
+	for (var i = 0; i < rows; i++) {
+		var row = $('<tr></tr>').attr({ class: ["class1", "class2", "class3"].join(' ') }).appendTo(mytable);
+		for (var j = 0; j < cols; j++) {
+			$('<td></td>').text("text").appendTo(row); 
+
+		}
+		 		 
+	}
+	console.log("TTTTT:"+mytable.html());
+	mytable.appendTo("#box");	       
+  
+}
+</script>
+
+Row Count:<input type="text" id="rowcount" />
+Column Count:<input type="text" id="columncount" />
+<input type="button" onclick="createTable();" value="Create Table" />
+<div id="box">
+</div>
+
+
+</body>
+</html>
