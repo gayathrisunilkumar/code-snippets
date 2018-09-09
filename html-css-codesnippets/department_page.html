@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Department</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      
+      <style>
+         * {
+         box-sizing: border-box;
+         }
+         body, html {
+         height: 100%;
+         margin: 0;
+         font-family: arial;
+         }
+         .container {
+         /* The image used */
+         background-image: url("abc.png");
+         /* Full height */
+         height: 50%; 
+         /* Center and scale the image nicely */
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         }
+         .heading{
+         background-color: #00000094;
+         position: absolute;
+         top: 0%;
+         height: 50%;
+         width: 100%;
+         /* left: 39%; */
+         text-align: center
+         }
+         .topnav {
+         overflow: hidden;
+         background-color: #3333334a;
+         position: fixed;
+         width: 100%;
+         }
+         .topnav a {
+         float: left;
+         color: #f2f2f2;
+         text-align: center;
+         padding: 14px 16px;
+         text-decoration: none;
+         font-size: 17px;
+         }
+         .topnav a:hover {
+         background-color: #ddd;
+         color: black;
+         }
+         .topnav a.active {
+         background-color: #4CAF50;
+         color: white;
+         }
+         #about{
+         margin: 0px;
+         font-size: 40px;
+         padding: 20px;
+         padding-top: 40px;
+         }
+         ul{
+         padding: 20px;
+         list-style-type: none;
+         }
+         li{
+         padding: 20px;
+         font-size: 25px;
+         }
+         @media (max-width:800px) {
+         div {
+         margin: 0px 20px;
+         }
+         }
+      </style>
+   </head>
+   <body>
+      <div class="container" id="container"></div>
+      <div class="heading">
+         <div class="topnav">
+            <a class="active" href="#container">Home</a>
+            <a href="#recent"  style="float: right;">Activities</a>
+            <a href="#csi"  style="float: right;">CSI</a>
+            <a href="#lanscape" style="float: right;">Lanscape</a>
+            <a href="#library" style="float: right;">Library</a>
+            <a href="#about"  style="float: right;">About</a>
+         </div>
+         <p style="    font-size: 60px; color: white; padding-left: 10px; padding-right: 10px; font-weight: bolder;    padding-top: 80px;">COMPUTER SCIENCE DEPARTMENT</p>
+      </div>
+      <div  style="background-color: #d6d6d6;">
+         <div style="margin:0px 120px;">
+            <h1 id="about">About</h1>
+            <p style="font-size: 20px;text-align: justify;    padding-top: 18px;
+               line-height: 33px;    margin: 0px;
+               padding-bottom: 20px;">The Department of Computer Science and Engineering was started in the year 1995. The department offers an undergradyate and Postgraduate programmee in Computer Science and Engineering. B.Tech programme in Information Technology was offerred in the department during tje period from 2000 to 2007. The department has four labs with  state of the art computing facilities and a department library with reference books and other research materials. The department is consistently produced university rank holders and our students have made the department proud by adorning various positions in Information Technology and other industries in India and abroad.Total staff members in the department is 18,comprising of 13 teaching faculty members(one Professor, 2 Associate Professor and 10 Assistanat Professors) and 5 Lab Staff(2 Second Grade Instructors and 3 Trade Instructors).  B. Tech course in Computer Science & Engineering is accredited by the National Board of Accreditation (NBA).  The department has obtained ISO certification under ISO 9001:2000. First phase of World Bank aid under TEQIP was availed by the department.   The department focuses on the overall development of the students imparting Industry standard skills through Projects and by encouraging Student Association activities and Industrial visits</p>
+         </div>
+      </div>
+      <div style="padding:40px;background-color: #c7c7c7">
+         <h1 style="padding-top: 40px;margin: 0px;">Lab Under Department</h1>
+         <ul>
+            <li>Programming Lab</li>
+            <li> Database Lab</li>
+            <li>Advanced Systems Lab</li>
+            <li>Hardware Lab</li>
+         </ul>
+         <p style="font-size: 20px;text-align: justify;    padding-top: 18px;
+            line-height: 33px;">All the machines in the labs are provided with hi-speed internet connection.The labs are equiped with latest configuration PCs, Thin Clients, HP Blade servers (HP BL25PG2(3Nos) & HP BL20G3(1No)), IBM eSeries server and ACER 4700 server, DAX Router, Managable Layer 2 & Layer 3 high end switches from CISCO.Department is a member of MSDN Academic alliance programme and having a collection of more than 70 licenced softwares.</p>
+      </div>
+      <div  style="background-color: #d6d6d6;">
+         <div style="    margin: 0px 100px ;padding-top: 50px;">
+            <h1 id="library">Department Library</h1>
+            <p style="font-size: 20px;text-align: justify;    padding-top: 18px;
+               line-height: 33px;    margin: 0px;
+               padding-bottom: 20px;"> Departmental Library is equiped with total of 1200 books. In addition, various technical papers presented during seminars conducted by the students in the department, mini project and final year project domuntations etc are made available to the students for reference. Curriculum based video and web courses prepared by eminent professors from IITs and IISc Banglore are purchased from NPTEL(NATIONAL PROGRAMME ON TECHNOLOGY ENHANCED LEARNING) by PTA and the CDs are available in department library</p>
+         </div>
+      </div>
+      <div  style="background-color: #c7c7c7;">
+         <div style="    margin: 0px 100px; padding-top: 50px;padding-bottom: 50px;">
+            <h1 id="lanscape">Lanscape</h1>
+            <p style="font-size: 20px;text-align: justify;    padding-top: 18px;
+               line-height: 33px;    margin: 0px;
+               padding-bottom: 20px;">LANSCAPE is an association of the faculty and students of the Computer Science Department. It conducts seminars and technical lectures by reputed personalities in the industry. Every year LANSCAPE conducts programs under the banner,  CULT-A-WAY. It is a students??? meet from all over the country, which includes technical paper presentations, software contests and technical quizzes and a cultural feast as well</p>
+         </div>
+      </div>
+      <div id="csi"  style="background-color: #d6d6d6;">
+         <div style="    margin: 0px 100px; padding-top: 50px;padding-bottom: 50px;">
+            <h1 >Computer Society of India</h1>
+            <p style="font-size: 20px;text-align: justify;    padding-top: 18px;
+               line-height: 33px;    margin: 0px;
+               padding-bottom: 20px;">Computer Society of India (CSI) is the first, largest and most professionally managed association of and for IT professionals in India. CSI is a non-profit organization and its members are committed to the advancement of theory and practice of Computer Engineering and Technology Systems. 
+               <br>
+               The seed for the Computer Society of India (CSI) was first sown in the year 1965 with a handful of IT enthusiasts who were a computer user group and felt the need to organize their activities. They also wanted to share their knowledge and exchange ideas on what they felt was a fast emerging sector. Today the purposes of the Society are scientific and educational directed towards the advancement of the theory and practice of computer science & IT. CSI is celebrating its Golden Jubilee in 2015.
+               <br>
+               The activities of the Computer Society of India started in the city of Trivandrum with the annual convention of Computer Society of India CSI 69 in January 1969 on the theme topic 'Training in Software'.
+            </p>
+            <h1 style="padding-top: 40px;margin: 0px;">Activities in our College</h1>
+            <ol>
+               <li>Conducted Python workshop for First year students.</li>
+               <li>Conducted a seminar on Web development.</li>
+               <li>Conducted a talk on Soft Computing and its application in real world</li>
+            </ol>
+         </div>
+      </div>
+      <div  style="background-color: #c7c7c7;">
+         <div style="    margin: 0px 100px; padding-top: 50px;padding-bottom: 50px;">
+            <h1 id="recent">Recent Activities</h1>
+            <h2 style="">Click to view details</h2>
+            <ol>
+               <li><a href="http://www.sctce.ac.in/JOBFAIR2018.pdf" style="text-decoration: none;">Job Fair</a></li>
+               <li><a href="http://www.sctce.ac.in/notification%20PRL.pdf" style="text-decoration: none;">Applications are invited for the appointment to the post of PRINCIPAL</a></li>
+               <li><a href="http://www.sctce.ac.in/cee2017.html" style="text-decoration: none;" >Conditions and fee details for B.Tech degree admission</a></li>
+            </ol>
+         </div>
+      </div>
+   </body>
+</html>
